@@ -1,2 +1,12 @@
 <!--pages/home/home.wxml-->
+<!-- 轮播图展示 -->
+<l-swiper list="{{banner}}" swiper="swiper"/>
 
+<!-- 推荐数据的展示 -->
+<l-recommend recommend="{{recommend}}"></l-recommend>
+
+<!-- 每周流行数据展示 -->
+<l-popular/>
+
+<!-- tab-control -->
+<l-tab-control bind:itemClick="itemClick" titles="{{titles}}"/>

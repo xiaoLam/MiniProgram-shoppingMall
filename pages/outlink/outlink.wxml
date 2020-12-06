@@ -1,0 +1,2 @@
+<!--pages/outlink/outlink.wxml-->
+<web-view src="{{link}}"></web-view>

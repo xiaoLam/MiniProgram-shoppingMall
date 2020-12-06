@@ -1,0 +1,9 @@
+<!--pages/home/childComponents/l-recommend/l-recommend.wxml-->
+<view class="recommend">
+  <block wx:for="{{recommend}}" wx:key="acm">
+    <view class="recommend-item" bindtap="goOutlink" data-link="{{item.link}}">
+      <image class="image" src="{{item.image}}"></image>
+      <view class="text">{{item.title}}</view>
+    </view>
+  </block>
+</view>

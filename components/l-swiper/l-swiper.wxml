@@ -1,0 +1,15 @@
+<!--components/l-swiper/l-swiper.wxml-->
+<!-- swiper组件的使用可以查看官方的文档 -->
+<swiper class="swiper"
+        indicator-dots
+        indicator-active-color="#ff5777"
+        autoplay
+        interval="3000"
+        duration="300"
+        circular>
+  <block wx:for="{{list}}" wx:key="acm">
+    <swiper-item class="swiper-item">
+      <image class="image" src="{{item.image}}" mode="widthFix"></image>
+    </swiper-item>
+  </block>
+</swiper>

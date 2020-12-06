@@ -1,4 +1,10 @@
 {
-  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "l-swiper": "/components/l-swiper/l-swiper",
+    "l-tab-control": "/components/l-tab-control/l-tab-control",
+    "l-recommend": "./childComponents/l-recommend/l-recommend",
+    "l-popular": "./childComponents/l-popular/l-popular"
+  },
   "navigationBarTitleText": "购物街"
 }

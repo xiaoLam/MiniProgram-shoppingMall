@@ -6,7 +6,8 @@ import {
 Page({
   data: {
     banner: [],
-    recommend: []
+    recommend: [],
+    titles: ['流行', '新款', '精选']
   },
   onLoad: function (options) {
     // 在页面加载的时候进行数据请求
@@ -18,10 +19,16 @@ Page({
         banner: data.banner.list,
         recommend: data.recommend.list
       })
+      console.log(this.data.banner);
+      console.log(this.data.recommend);
     })
     .catch((err) => { // 请求数据失败
       console.log(err);
     })
+  },
+  itemClick(event) {
+    const index = event.detail.index
+    console.log(index);
   },
   onReady: function () {
 

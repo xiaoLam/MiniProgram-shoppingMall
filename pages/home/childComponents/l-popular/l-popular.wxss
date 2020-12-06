@@ -1,0 +1,4 @@
+/* pages/home/childComponents/l-popular/l-popular.wxss */
+.popular .image {
+  width: 100%;
+}
