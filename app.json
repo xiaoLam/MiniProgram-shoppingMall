@@ -5,6 +5,10 @@
     "pages/cart/cart",
     "pages/profile/profile"
   ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white"
+  },
   "tabBar": {
     "selectedColor": "#ff5777",
     "list": [
