@@ -7,7 +7,6 @@
   ],
   "tabBar": {
     "selectedColor": "#ff5777",
-
     "list": [
       {
         "pagePath": "pages/home/home",
