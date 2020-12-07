@@ -10,3 +10,10 @@
 
 <!-- tab-control -->
 <l-tab-control bind:itemClick="itemClick" titles="{{titles}}"/>
+
+<!-- 展示商品数据 -->
+<view class="goods">
+  <block wx:for="{{goods[currentType].list}}" wx:key="acm">
+    <l-goods-item class="goods-item" item="{{item}}"/>
+  </block>
+</view>

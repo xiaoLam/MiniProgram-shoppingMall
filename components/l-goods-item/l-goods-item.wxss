@@ -1,0 +1,38 @@
+/* components/l-goods-item/l-goods-item.wxss */
+.goods-item {
+  height: 630rpx;
+  position: relative;
+}
+.item-image {
+  width: 100%;
+  border-radius: 10rpx;
+}
+.item-desc {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.item-title {
+  padding: 0 10rpx;
+  font-size: 30rpx;
+  color: #555;
+  /* 实现多行文本单行显示, 溢出文本显示省略号 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+}
+.item-info {
+  text-align: center;
+  font-size: 30rpx;
+  color: #555;
+}
+.info-price {
+  color: #ff5777;
+}
+.info-icon {
+  position: relative;
+  top: 4rpx;
+  height: 30rpx;
+  width: 30rpx;
+  margin-left: 10rpx;
+}
