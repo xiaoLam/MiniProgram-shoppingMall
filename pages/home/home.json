@@ -2,7 +2,7 @@
   "enablePullDownRefresh": true,
   "usingComponents": {
     "l-swiper": "/components/l-swiper/l-swiper",
-    "l-goods-item": "/components/l-goods-item/l-goods-item",
+    "l-goods": "/components/l-goods/l-goods",
     "l-tab-control": "/components/l-tab-control/l-tab-control",
     "l-recommend": "./childComponents/l-recommend/l-recommend",
     "l-popular": "./childComponents/l-popular/l-popular"

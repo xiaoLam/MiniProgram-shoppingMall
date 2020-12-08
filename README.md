@@ -45,3 +45,4 @@
 + 在首页中通过wx:for遍历出对应数据个数的l-goods-item组件
 + 并将数据传给l-goods-item组件
 + 在l-goods-item组件中展示数据, 编写样式
++ 为了代码的规范, 我将商品数据的展示抽离成一个组件, 放在components/l-goods中

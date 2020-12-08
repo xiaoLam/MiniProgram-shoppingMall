@@ -1,0 +1,6 @@
+<!--components/l-goods/l-goods.wxml-->
+<view class="goods">
+  <block wx:for="{{goods}}" wx:key="acm">
+    <l-goods-item class="goods-item" item="{{item}}"/>
+  </block>
+</view>

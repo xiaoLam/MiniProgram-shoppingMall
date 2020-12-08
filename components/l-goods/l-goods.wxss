@@ -1,0 +1,10 @@
+/* components/l-goods/l-goods.wxss */
+.goods {
+  display: flex;
+  /* flex布局中使用flex-warp设置是否换行 */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.goods-item {
+  width: 48%;
+}
