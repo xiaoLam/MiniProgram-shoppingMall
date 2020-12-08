@@ -1,0 +1,6 @@
+<!--pages/detail/detail.wxml-->
+<!-- 展示轮播图 -->
+<l-swiper list="{{bannerImage}}" swiper="detail-swiper"/>
+
+<!-- 展示商品基本信息 -->
+<l-base-info goodBaseInfo="{{goodBaseInfo}}"/>

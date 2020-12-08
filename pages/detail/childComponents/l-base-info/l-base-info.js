@@ -1,10 +1,10 @@
-// components/l-goods-item/l-goods-item.js
+// pages/detail/childComponents/l-base-info/l-base-info.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    item: {
+    goodBaseInfo: {
       type: Object,
       value: {}
     }
@@ -21,11 +21,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    goDetailPage() {
-      const iid = this.data.item.iid
-      wx.navigateTo({
-        url: '/pages/detail/detail?iid=' + iid,
-      })
-    }
+
   }
 })

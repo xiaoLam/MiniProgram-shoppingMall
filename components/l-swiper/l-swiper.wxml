@@ -9,7 +9,7 @@
         circular>
   <block wx:for="{{list}}" wx:key="acm">
     <swiper-item class="swiper-item">
-      <image class="image" src="{{item.image}}" mode="widthFix"></image>
+      <image class="image" src="{{item}}" mode="widthFix"></image>
     </swiper-item>
   </block>
 </swiper>

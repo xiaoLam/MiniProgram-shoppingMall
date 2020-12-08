@@ -1,0 +1,4 @@
+/* pages/detail/detail.wxss */
+.detail-swiper {
+  height: 700rpx;
+}

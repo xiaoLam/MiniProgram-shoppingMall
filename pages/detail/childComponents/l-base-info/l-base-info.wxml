@@ -1,0 +1,9 @@
+<!--pages/detail/childComponents/l-base-info/l-base-info.wxml-->
+<view class="base-info">
+  <view class="base-title">{{goodBaseInfo.title}}</view>
+  <view class="price-info">
+    <text class="now-price">{{goodBaseInfo.newPrice}}</text>
+    <text class="old-price">{{goodBaseInfo.oldPrice}}</text>
+    <text class="discount">{{goodBaseInfo.discount}}</text>
+  </view>
+</view>

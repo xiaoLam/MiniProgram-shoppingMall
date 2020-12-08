@@ -1,9 +1,9 @@
 {
-  "enablePullDownRefresh": true,
   "usingComponents": {
     "l-swiper": "/components/l-swiper/l-swiper",
     "l-goods": "/components/l-goods/l-goods",
     "l-tab-control": "/components/l-tab-control/l-tab-control",
+    "l-backtop": "/components/l-backtop/l-backtop",
     "l-recommend": "./childComponents/l-recommend/l-recommend",
     "l-popular": "./childComponents/l-popular/l-popular"
   },

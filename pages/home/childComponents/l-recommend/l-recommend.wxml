@@ -2,7 +2,7 @@
 <view class="recommend">
   <block wx:for="{{recommend}}" wx:key="acm">
     <view class="recommend-item" bindtap="goOutlink" data-link="{{item.link}}">
-      <image class="image" src="{{item.image}}"></image>
+      <image class="image" src="{{item.image}}" bind:load="handleImageLoad"></image>
       <view class="text">{{item.title}}</view>
     </view>
   </block>

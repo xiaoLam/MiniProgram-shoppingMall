@@ -14,7 +14,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-
+    sendImage: true
   },
 
   /**
@@ -26,6 +26,12 @@ Component({
       wx.navigateTo({
         url: '/pages/outlink/outlink?link=' + link,
       })
+    },
+    handleImageLoad() {
+      if(this.data.sendImage) {
+        this.triggerEvent("imageLoad")
+        this.data.sendImage = false
+      }
     }
-    }
+  }
 })

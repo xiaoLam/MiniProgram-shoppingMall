@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-swiper": "/components/l-swiper/l-swiper",
+    "l-base-info": "./childComponents/l-base-info/l-base-info"
+  }
+}
