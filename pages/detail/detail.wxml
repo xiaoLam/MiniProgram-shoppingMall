@@ -1,6 +1,32 @@
 <!--pages/detail/detail.wxml-->
-<!-- 展示轮播图 -->
-<l-swiper list="{{bannerImage}}" swiper="detail-swiper"/>
+<view class="detail">
+  <!-- 展示轮播图 -->
+  <l-swiper list="{{bannerImage}}" swiper="detail-swiper"/>
 
-<!-- 展示商品基本信息 -->
-<l-base-info goodBaseInfo="{{goodBaseInfo}}"/>
+  <!-- 展示商品基本信息 -->
+  <l-base-info goodBaseInfo="{{goodBaseInfo}}"/>
+
+  <!-- 展示商店信息 -->
+  <l-shop-info shopInfo="{{shopInfo}}" />
+
+  <!-- 展示商品详情信息 -->
+  <l-detail-info detailInfo="{{detailInfo}}" />
+
+  <!-- 展示商品尺码信息 -->
+  <l-param-info paramInfo="{{paramInfo}}" />
+
+  <!-- 展示商品评论信息 -->
+  <l-comment-info commentInfo="{{commentInfo}}" />
+
+  <!-- 展示推荐商品信息 -->
+  <l-recomment-info recommends="{{recommends}}" />
+
+</view>
+
+<!-- 底部tab栏 -->
+<l-bottom-bar bind:addcart="onAddCart" />
+
+<!-- 返回顶部按钮 -->
+  <!-- 注意, 这里不用hidden的原因是, 小程序中的自定义组件是不支持hidden的 -->
+  <l-backtop backtop="pagebacktop" wx:if="{{showBacktop}}"/>
+

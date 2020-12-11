@@ -1,0 +1,39 @@
+/* pages/detail/childComponents/l-detail-info/l-detail-info.wxss */
+.detail-info {
+  margin-top: 30rpx;
+  padding: 0 20rpx;
+}
+
+.detail-heard {
+  font-size: 32rpx;
+}
+.line {
+  position: relative;
+  height: 4rpx;
+  width: 200rpx;
+  background: #333;
+}
+.start::before, .end::after {
+  content: "";
+  position: absolute;
+  height: 10rpx;
+  width: 10rpx;
+  background: #333;
+  bottom: 0;
+}
+.end {
+  float: right;
+}
+.end::after {
+  right: 0;
+}
+.desc {
+  margin: 20rpx 6rpx;
+}
+
+.detail-content .title {
+  margin: 40rpx 0;
+}
+.detail-image {
+  width: 100%;
+}

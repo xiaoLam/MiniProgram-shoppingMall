@@ -4,7 +4,8 @@
   bottom: 0rpx;
   right: 8rpx;
 }
-.backtop .backtop-image {
+
+.backtop-image {
   height: 90rpx;
   width: 90rpx;
 }

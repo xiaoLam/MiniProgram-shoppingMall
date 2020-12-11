@@ -1,0 +1,27 @@
+<!--pages/detail/childComponents/l-detail-info/l-detail-info.wxml-->
+<view class="detail-info">
+  <!-- 商品简要信息 -->
+  <view class="detail-heard">
+    <view class='start line'></view>
+    <view class='desc'>{{detailInfo.desc}}</view>
+    <view class='end line'></view>
+  </view>
+
+  <!-- 商品详细信息 -->
+  <view class="detail-content">
+    <block wx:for="{{detailInfo.detailImage}}"         
+           wx:for-item="outItem"
+           wx:for-index="outIndex"
+           wx:key="outIndex">
+      <view class="title">
+        {{outItem.key}}
+      </view>
+      <block wx:for="{{outItem.list}}"
+             wx:for-item="inItem"
+             wx:for-inde="inIndex"
+             wx:key="inIndex">
+        <image class="detail-image" src="{{inItem}}" mode="widthFix"></image>      
+      </block>
+    </block>
+  </view>
+</view>

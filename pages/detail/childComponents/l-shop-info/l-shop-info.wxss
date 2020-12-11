@@ -1,0 +1,72 @@
+/* pages/detail/childComponents/l-shop-info/l-shop-info.wxss */
+.shop-info {
+  padding: 16rpx 16rpx 50rpx;
+  border-bottom: 12rpx solid #f2f2f2;
+  margin-top: 30rpx;
+}
+.shop-logo .logo {
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 46rpx;
+  border: 1px solid rgba(200,200,200,.6);
+  vertical-align: middle;
+}
+.shop-logo .name {
+  margin-left: 18rpx;
+  color: #777;
+  position: relative;
+  top: 8rpx;
+}
+
+.sell-info {
+  display: flex;
+  margin-top: 30rpx;
+}
+.count-info {
+  display: flex;
+  width: 350rpx;
+  justify-content: space-around;
+  /* padding-right: 30rpx; */
+  border-right: 4rpx solid #ccc;
+  text-align: center;
+  color: #777;
+}
+.count-info .count-item .count {
+  font-size: 40rpx;
+}
+.count-info .count-item .text {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.grade-info {
+  flex: 1;
+  padding: 0 40rpx;
+}
+
+.grade-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+}
+.grade-row .name {
+  color: #777;
+}
+.good {
+  color: #ff5777;
+}
+
+.less {
+  color: #5ea732;
+}
+
+.entrance {
+  text-align: center;
+  margin-top: 30rpx
+}
+
+.entrance .shop-btn {
+  width: 350rpx;
+  border-radius: 20rpx;
+  font-weight: 400;
+  border: 2rpx solid #ccc;
+}

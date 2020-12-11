@@ -2,6 +2,8 @@
 .base-info {
   margin-top: 24rpx;
   padding: 0 10rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 12rpx solid #f2f2f2;
 }
 
 .base-title {
@@ -31,4 +33,37 @@
   left: 20rpx;
   padding: 8rpx;
   border-radius: 8rpx;
+}
+
+.sell-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color: #aaa;
+  margin-top: 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 4rpx solid #bbb;
+}
+.sell-info-item {
+  /* flex: 1; */
+  text-align: center;
+}
+
+.service-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16rpx;
+}
+.service-info-item  {
+  text-align: center;
+}
+.service-info-item .icon {
+  height: 30rpx;
+  width: 30rpx;
+  position: relative;
+  top: 3rpx;
+}
+.service-info-item .name {
+  font-size: 26rpx;
+  color: #aaa;
 }

@@ -1,19 +1,39 @@
 // pages/detail/detail.js
-import {getDetailData,GoodBaseInfo} from "../../service/detail"
+import {getDetailData, 
+        GoodBaseInfo,
+        ShopInfo,
+        ParamInfo,
+        getRecommends} from "../../service/detail"
 
 Page({
   data: {
-    iid: "1m745k0",
+    iid: "",
     bannerImage: [],
-    goodBaseInfo: {}
+    goodBaseInfo: {},
+    shopInfo: {},
+    detailInfo: {},
+    paramInfo: {},
+    commentInfo: {},
+    recommends: [],
+    showBacktop: false
   },
-
   // -------------------生命周期函数--------------
   onLoad: function (options) {
-    /* this.setData({
+    this.setData({
       iid: options.iid
-    }) */
+    })
     this._getDetailData(this.data.iid)
+
+    this._getRecommends()
+  },
+  onPageScroll(options) {
+    const scrollTop = options.scrollTop
+    const showBacktopFlag = scrollTop >= 1000
+    if (showBacktopFlag !== this.data.showBacktop) {
+      this.setData({
+        showBacktop: showBacktopFlag
+      })
+    }
   },
 
   // -------------网络请求函数----------
@@ -28,11 +48,43 @@ Page({
       // 取出商品基本信息
       const goodBaseInfo = new GoodBaseInfo(data.itemInfo, data.columns, data.shopInfo.services)
 
+      // 取出商家信息
+      const shopInfo = new ShopInfo(data.shopInfo)
+
+      // 取出商品详情信息
+      const detailInfo = data.detailInfo;
+
+      // 获取商品ParamInfo信息
+      const paramInfo = new ParamInfo(data.itemParams.info, data.itemParams.rule)
+
+      // 获取商品评论信息
+      let commentInfo = {}
+      if (data.rate && data.rate.cRate > 0) {
+        commentInfo = data.rate.list[0]
+      }
+
       this.setData({
         bannerImage,
-        goodBaseInfo
+        goodBaseInfo,
+        shopInfo,
+        detailInfo,
+        paramInfo,
+        commentInfo
       })
     })
+  },
+  _getRecommends() {
+    getRecommends().then(res => {
+      console.log(res.data.data.list);
+      this.setData({
+        recommends: res.data.data.list
+      })
+    })
+  },
+
+  // -----------------事件绑定函数----------------
+  onAddCart() {
+    console.log("点击了加入购物车");
   },
 
   /**

@@ -1,26 +1,26 @@
-// components/l-backtop/l-backtop.js
+// pages/detail/childComponents/l-detail-info/l-detail-info.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    detailInfo: {
+      type: Object,
+      value: {}
+    }
   },
+
   /**
    * 组件的初始数据
    */
   data: {
 
   },
-  externalClasses: ["backtop"],
+
   /**
    * 组件的方法列表
    */
   methods: {
-    handleBacktopClick() {
-      wx.pageScrollTo({
-        scrollTop: 0
-      })
-    }
+
   }
 })

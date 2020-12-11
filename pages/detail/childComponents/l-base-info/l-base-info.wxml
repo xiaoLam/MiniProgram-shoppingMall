@@ -1,9 +1,32 @@
 <!--pages/detail/childComponents/l-base-info/l-base-info.wxml-->
 <view class="base-info">
+  <!-- 标题 -->
   <view class="base-title">{{goodBaseInfo.title}}</view>
+
+  <!-- 价格 -->
   <view class="price-info">
     <text class="now-price">{{goodBaseInfo.newPrice}}</text>
     <text class="old-price">{{goodBaseInfo.oldPrice}}</text>
     <text class="discount">{{goodBaseInfo.discount}}</text>
+  </view>
+
+  <!-- 销售信息 -->
+  <view class="sell-info">
+    <block wx:for="{{goodBaseInfo.columns}}" wx:key="index">
+      <view class="sell-info-item">{{item}}</view>
+    </block>
+  </view>
+
+  <!-- 服务信息 -->
+  <view class='service-info'>
+    <block wx:for="{{goodBaseInfo.services}}" wx:key="index">
+      <!-- 延误必赔是否显示? -->
+      <block wx:if="{{index !== 0}}">
+        <view class='service-info-item'>
+          <image class='icon' src="{{item.icon}}"/>
+          <text class='name'>{{item.name}}</text>
+        </view>
+      </block>
+    </block>
   </view>
 </view>
