@@ -3,7 +3,9 @@ import {getDetailData,
         GoodBaseInfo,
         ShopInfo,
         ParamInfo,
-        getRecommends} from "../../service/detail"
+        getRecommends} from "../../service/detail";
+
+const app = getApp()
 
 Page({
   data: {
@@ -84,7 +86,24 @@ Page({
 
   // -----------------事件绑定函数----------------
   onAddCart() {
-    console.log("点击了加入购物车");
+    console.log(this.data);
+    // 1.获取商品对象
+    const obj = {}
+    obj.iid = this.data.iid;
+    obj.imageURL = this.data.bannerImage[0];
+    obj.title = this.data.goodBaseInfo.title;
+    obj.desc = this.data.goodBaseInfo.desc;
+    obj.price = this.data.goodBaseInfo.realPrice;
+
+
+    console.log(obj);
+    // 2.加入到购物车列表
+    app.addToCart(obj)
+
+    // 3.加入成功提示
+    wx.showToast({
+      title: '加入购物车成功',
+    })
   },
 
   /**
