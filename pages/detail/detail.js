@@ -42,7 +42,6 @@ Page({
   _getDetailData(iid) {
     getDetailData(iid).then((res) => {
       const data = res.data.result
-      console.log(data);
 
       // 取出轮播图图片
       const bannerImage = data.itemInfo.topImages
@@ -77,7 +76,6 @@ Page({
   },
   _getRecommends() {
     getRecommends().then(res => {
-      console.log(res.data.data.list);
       this.setData({
         recommends: res.data.data.list
       })
@@ -86,7 +84,6 @@ Page({
 
   // -----------------事件绑定函数----------------
   onAddCart() {
-    console.log(this.data);
     // 1.获取商品对象
     const obj = {}
     obj.iid = this.data.iid;
@@ -96,7 +93,6 @@ Page({
     obj.price = this.data.goodBaseInfo.realPrice;
 
 
-    console.log(obj);
     // 2.加入到购物车列表
     app.addToCart(obj)
 

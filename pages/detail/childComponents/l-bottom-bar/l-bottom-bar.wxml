@@ -10,7 +10,7 @@
       <view>店铺</view>
     </view>
     <view class='left-item'>
-      <image src="/assets/detail/collect.png"/>
+      <image class="image" src="/assets/detail/collect.png"/>
       <view>收藏</view>
     </view>
   </view>

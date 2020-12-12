@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "l-header": "./childComponents/l-header/l-header",
+    "l-info": "./childComponents/l-info/l-info",
+    "l-list-view": "./childComponents/l-list-view/l-list-view"
+  },
+  "navigationBarTitleText": "我的信息"
 }
