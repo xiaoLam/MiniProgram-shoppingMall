@@ -1,6 +1,6 @@
 /* components/l-goods-item/l-goods-item.wxss */
 .goods-item {
-  height: 630rpx;
+  padding-bottom: 72rpx;
   position: relative;
 }
 .item-image {
