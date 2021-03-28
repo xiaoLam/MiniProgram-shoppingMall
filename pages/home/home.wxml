@@ -20,4 +20,4 @@
 
 <!-- 返回顶部按钮 -->
 <!-- 注意, 这里不用hidden的原因是, 小程序中的自定义组件是不支持hidden的 -->
-<l-backtop wx:if="{{showBacktop}}"/>
+<l-backtop backtop="pagebacktop" wx:if="{{showBacktop}}"/>

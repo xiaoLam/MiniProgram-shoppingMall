@@ -10,3 +10,9 @@
   left: 0;
   z-index: 1;
 }
+
+.pagebacktop {
+  position: fixed;
+  bottom: 0rpx;
+  right: 8rpx;
+}
